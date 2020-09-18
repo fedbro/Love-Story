@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miss You</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         .countup {
             text-align: center;
@@ -195,11 +196,11 @@ font-size: 50%;
 
 <section>
     <div class="countup" id="countup1">
-        <div class="container">
-            <div class="bg-img">
+        <div class="container"  data-aos="zoom-in">
+            <div class="bg-img"  data-aos="zoom-in">
                 <!-- <img src="love.png"> -->
-                <div class="container">
-                    <img class="miss-you " src="20200919_001842.png">
+                <div class="container" >
+                    <img class="miss-you "   data-aos="zoom-out">src="20200919_001842.png">
                   
                     <div class="time">
                         <div>
@@ -225,6 +226,10 @@ font-size: 50%;
 <section>
   
 </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
     <script>
         window.onload = function () {
             // Month Day, Year Hour:Minute:Second, id-of-element-container
