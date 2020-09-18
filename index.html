@@ -31,6 +31,35 @@ color:aliceblue;
             text-transform: uppercase;
         }
 
+        .fadeIn{
+  width: 100%;
+
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  animation: fade-in-scale-down 5s ease-out 1;
+  -webkit-animation: fade-in-scale-down 5s ease-in-out 1;
+  -moz-animation:    fade-in-scale-down 5s ease-in-out 1;
+  -o-animation:      fade-in-scale-down 5s ease-in-out 1;
+}
+
+@keyframes fade-in-scale-down{
+  0%{
+    opacity:0;
+    -webkit-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    transform:scale(1.1)
+  }
+  
+  100%{
+    opacity:1;
+    -webkit-transform:scale(1);
+    -ms-transform:scale(1);
+    transform:scale(1);
+  }
+}
 
 
 
@@ -198,10 +227,10 @@ font-size: 50%;
         <div class="container">
             <div class="bg-img">
                 <!-- <img src="love.png"> -->
-                <div class="container">
+                <div class="container fadeIn">
                     <img class="miss-you " src="20200919_001842.png">
                   
-                    <div class="time">
+                    <div class="time fadeIn">
                         <div>
                             <!-- <span class="timeel years"></span>
         <span class="timeel timeRefYears">years</span></div> -->
